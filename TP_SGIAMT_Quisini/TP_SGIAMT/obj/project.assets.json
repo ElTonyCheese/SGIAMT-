@@ -12861,11 +12861,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TP_SGIAMT_Quisini\\TP_SGIAMT\\TP_SGIAMT.csproj",
+      "projectUniqueName": "D:\\quisini\\SGIAMT-\\TP_SGIAMT_Quisini\\TP_SGIAMT\\TP_SGIAMT.csproj",
       "projectName": "TP_SGIAMT",
-      "projectPath": "D:\\TP_SGIAMT_Quisini\\TP_SGIAMT\\TP_SGIAMT.csproj",
+      "projectPath": "D:\\quisini\\SGIAMT-\\TP_SGIAMT_Quisini\\TP_SGIAMT\\TP_SGIAMT.csproj",
       "packagesPath": "C:\\Users\\alumno.LABORATORIOS\\.nuget\\packages\\",
-      "outputPath": "D:\\TP_SGIAMT_Quisini\\TP_SGIAMT\\obj\\",
+      "outputPath": "D:\\quisini\\SGIAMT-\\TP_SGIAMT_Quisini\\TP_SGIAMT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
