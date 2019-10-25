@@ -1,0 +1,81 @@
+﻿@model TP_SGIAMT.Models.TUsuarioModalidad
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>TUsuarioModalidad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FkIuDni)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FkIuDni)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IumFase)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IumFase)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DumFechaIns)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DumFechaIns)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VmUmArchivoDni)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VmUmArchivoDni)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VmUmArchivoB)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VmUmArchivoB)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FkIcIdConcurso1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FkIcIdConcurso1.PkIuDni)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FkIcIdConcursoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FkIcIdConcursoNavigation.PkIcIdConcurso)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FkImIdModalidadNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FkImIdModalidadNavigation.PkImIdModalidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FkIuDniParejaNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FkIuDniParejaNavigation.PkIuDni)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.PkIumCodUm">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>

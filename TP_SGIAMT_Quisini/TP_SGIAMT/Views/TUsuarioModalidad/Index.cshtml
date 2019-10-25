@@ -1,0 +1,91 @@
+﻿@model IEnumerable<TP_SGIAMT.Models.TUsuarioModalidad>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FkIuDni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IumFase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DumFechaIns)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VmUmArchivoDni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VmUmArchivoB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkIcIdConcurso1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkIcIdConcursoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkImIdModalidadNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkIuDniParejaNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkIuDni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IumFase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DumFechaIns)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VmUmArchivoDni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VmUmArchivoB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkIcIdConcurso1.PkIuDni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkIcIdConcursoNavigation.PkIcIdConcurso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkImIdModalidadNavigation.PkImIdModalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkIuDniParejaNavigation.PkIuDni)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PkIumCodUm">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PkIumCodUm">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PkIumCodUm">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>
